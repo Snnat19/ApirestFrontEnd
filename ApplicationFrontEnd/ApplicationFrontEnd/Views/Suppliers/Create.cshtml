@@ -1,0 +1,81 @@
+﻿@model ApplicationFrontEnd.Models.DTO.SupplierDTO
+
+@{
+    ViewData["Title"] = "Create Supplier";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-primary">Crear un Proveedor</h2>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-header">
+                <h5 class="card-title">Crear un Proveedor</h5>
+                <form method="post" asp-action="Create" enctype="multipart/form-data">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="CompanyName">Nombre de la compañia</label>
+                            <input asp-for="CompanyName" class="form-control" placeholder="Ingrese nombre de la empresa" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="ContactName">Nombre</label>
+                            <input asp-for="ContactName" class="form-control" placeholder="Ingrese su nombre" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="ContactTitle">Titulo</label>
+                            <input asp-for="ContactTitle" class="form-control" placeholder="Ingrese su titulo" />
+                        </div>
+                     
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="City">Ciudad</label>
+                            <input asp-for="City" class="form-control" placeholder="Ingrese su ciudad" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Country">País</label>
+                            <input asp-for="Country" class="form-control" placeholder="Ingrese su país" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Phone">Teléfono</label>
+                            <input asp-for="Phone" class="form-control" placeholder="Ingrese su teléfono" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Email">Email</label>
+                            <input asp-for="Email" class="form-control" placeholder="Ingrese su Email" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-success btn-block mt-2">Crear Proveedor</button>
+                            <a asp-action="Index" class="btn btn-secondary btn-block mt-2">Volver</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

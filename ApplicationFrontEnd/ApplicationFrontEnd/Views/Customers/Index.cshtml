@@ -1,0 +1,22 @@
+﻿﻿﻿@{
+    ViewData["Title"] = "List of Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<h2>Lista de Clientes</h2>
+<br />
+<div class="col-6">
+    <a asp-action="Create" class="btn btn-outline-primary">Crear nuevo cliente</a>
+</div>
+<br />
+<div id="customersContainer">
+    <!-- Los clientes se mostrarán aquí -->
+</div>
+
+
+@section Scripts {
+    <script src="~/js/customer2.js"></script>
+}
+
