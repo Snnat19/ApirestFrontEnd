@@ -7,42 +7,60 @@
 
 
 <div class="container mt-5">
-    <div class="card mx-auto" style="max-width: 500px;">
+
         <div class="card-header">
-            <h5 class="card-title">Crear un Producto</h5>
+            <h5 class="titulito">Crear un Producto</h5>
         </div>
-        <div class="card-body">
-            <form method="post" asp-action="Create" enctype="multipart/form-data">
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label asp-for="ProductName">Nombre del producto</label>
-                        <input asp-for="ProductName" class="form-control" placeholder="Ingrese nombre del producto" />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label asp-for="SupplierId">ID del proveedor</label>
-                        <input asp-for="SupplierId" class="form-control" placeholder="Ingrese el ID del proveedor" />
+        <div class="row mt-4">
+            <div class="col-12">
+                <form method="post" asp-action="Create" enctype="multipart/form-data">
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label asp-for="ProductName">Nombre del producto</label>
+                        </div>
+                        <div class="col-8">
+                            <input asp-for="ProductName" class="form-control" placeholder="Ingrese nombre del producto" />
+                        </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label asp-for="SupplierId">ID del proveedor</label>
+                        </div>
+                        <div class="col-8">
+                            <input asp-for="SupplierId" class="form-control" placeholder="Ingrese el ID del proveedor" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-4">
                             <label asp-for="UnitPrice">Precio Unitario</label>
+                        </div>
+                        <div class="col-8">
                             <input asp-for="UnitPrice" class="form-control" placeholder="Ingrese el precio unitario" />
                         </div>
-                        <div class="form-group col-md-6">
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-4">
                             <label asp-for="Package">Package</label>
+                        </div>
+                        <div class="col-8">
                             <input asp-for="Package" class="form-control" placeholder="Ingrese package" />
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-success btn-block mt-2">Crear Proveedor</button>
-                            <a asp-action="Index" class="btn btn-secondary btn-block mt-2">Volver</a>
-                      </div>
+                <div class="form-group row mt-4">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success btn-block">Crear Producto</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-block mt-2">Volver</a>
+                    </div>
                 </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
+

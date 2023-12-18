@@ -5,6 +5,7 @@ html {
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+
   }
 }
 
@@ -20,3 +21,167 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.titulito {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+.text-center {
+    color: red; /* Color del título */
+    font-size: 2em; /* Tamaño del título, puedes ajustarlo según tus necesidades */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.footer[b-eer3300gnz] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+/*** ESTILOS BOTÓN GROW ELLIPSE ***/
+.ov-btn-grow-ellipse {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 2px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none; /* Quitar el subrayado del texto */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+    .ov-btn-grow-ellipse:hover {
+        color: #fff; /* color de fuente hover */
+        font-family: 'Pixelify Sans', sans-serif;
+    }
+
+    .ov-btn-grow-ellipse::after {
+        content: "";
+        background: #4741d7; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        border-radius: 50%;
+        left: -50%;
+        right: -50%;
+        top: -150%;
+        bottom: -150%;
+        transform: scale(0, 0);
+        transition: all 0.4s ease;
+    }
+
+    .ov-btn-grow-ellipse:hover::after {
+        transition: all 0.6s ease-out;
+        transform: scale(1, 1);
+    }
+/*** ESTILOS BOTÓN GROW ELLIPSE ***/
+.ov-btn-grow-ellipse {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 5px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 5px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+    .ov-btn-grow-ellipse:hover {
+        color: #fff; /* color de fuente hover */
+    }
+
+    .ov-btn-grow-ellipse::after {
+        content: "";
+        background: #4741d7; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        border-radius: 50%;
+        left: -50%;
+        right: -50%;
+        top: -150%;
+        bottom: -150%;
+        transform: scale(0, 0);
+        transition: all 0.4s ease;
+    }
+
+    .ov-btn-grow-ellipse:hover::after {
+        transition: all 0.6s ease-out;
+        transform: scale(1, 1);
+    }
+
+/*customer*/
+.container {
+    margin-top: 50px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .custom-table th,
+    .custom-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .custom-table th {
+        background-color: #f2f2f2;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .form-group label {
+        font-weight: bold;
+        flex-basis: 30%;
+        margin-right: 20px;
+    }
+
+.form-control {
+    flex-basis: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-secondary {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .btn-secondary:hover {
+        text-decoration: underline;
+    }
+
+

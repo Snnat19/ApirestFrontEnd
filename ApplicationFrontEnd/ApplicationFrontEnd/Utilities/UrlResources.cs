@@ -6,6 +6,5 @@
         public static string UrlCustomers = "api/Customers/";
         public static string UrlSuppliers = "api/Suppliers/";
         public static string UrlProducts = "api/Products/";
-        public static string UrlOrders = "api/Orders/";
     }
 }
